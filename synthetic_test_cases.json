@@ -1,0 +1,34 @@
+[
+  {
+    "id": "SYN-01",
+    "message": "URGENT: Your account will be suspended today. Verify your password and OTP. Click here to continue.",
+    "expected_indicators": [
+      "Urgent pressure",
+      "Credential request",
+      "Link or attachment prompt",
+      "Threat or consequence"
+    ]
+  },
+  {
+    "id": "SYN-02",
+    "message": "Congratulations, you have won a free gift. Click here to claim your prize.",
+    "expected_indicators": [
+      "Prize or unexpected reward",
+      "Link or attachment prompt"
+    ]
+  },
+  {
+    "id": "SYN-03",
+    "message": "Hi team, our weekly meeting is moved to 3 PM. Please review the agenda before the call.",
+    "expected_indicators": []
+  },
+  {
+    "id": "SYN-04",
+    "message": "Please pay the processing fee today to avoid a penalty. Use the payment link in this message.",
+    "expected_indicators": [
+      "Money or payment request",
+      "Link or attachment prompt",
+      "Threat or consequence"
+    ]
+  }
+]
