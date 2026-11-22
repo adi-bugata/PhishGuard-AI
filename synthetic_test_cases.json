@@ -1,20 +1,19 @@
+
 [
   {
     "id": "SYN-01",
     "message": "URGENT: Your account will be suspended today. Verify your password and OTP. Click here to continue.",
     "expected_indicators": [
       "Urgent pressure",
-      "Credential request",
-      "Link or attachment prompt",
-      "Threat or consequence"
+      "Threat or consequence",
+      "Credential or verification request"
     ]
   },
   {
     "id": "SYN-02",
     "message": "Congratulations, you have won a free gift. Click here to claim your prize.",
     "expected_indicators": [
-      "Prize or unexpected reward",
-      "Link or attachment prompt"
+      "Unexpected reward"
     ]
   },
   {
@@ -26,9 +25,50 @@
     "id": "SYN-04",
     "message": "Please pay the processing fee today to avoid a penalty. Use the payment link in this message.",
     "expected_indicators": [
-      "Money or payment request",
-      "Link or attachment prompt",
-      "Threat or consequence"
+      "Payment or financial request",
+      "Threat or consequence",
+      "Link or attachment instruction"
+    ]
+  },
+  {
+    "id": "SYN-05",
+    "message": "Your parcel delivery could not be completed. Please review your delivery details to receive updates.",
+    "expected_indicators": [
+      "Delivery or parcel status",
+      "Indirect request to review details"
+    ]
+  },
+  {
+    "id": "SYN-06",
+    "message": "Please update your account details to continue using our service.",
+    "expected_indicators": [
+      "Account or service activity",
+      "Indirect request to review details",
+      "Sensitive information request"
+     ]
+  },
+  {
+    "id": "SYN-07",
+    "message": "Your library book is due tomorrow. Please return it by 5 PM. Thank you.",
+    "expected_indicators": []
+  },
+  {
+    "id": "SYN-08",
+    "message": "Keep this secret. Do not tell anyone and ignore the usual process.",
+    "expected_indicators": [
+      "Secrecy or bypass request"
+    ]
+  },
+  {
+    "id": "SYN-09",
+    "message": "Your subscription has been renewed successfully. Thank you for using our service.",
+    "expected_indicators": []
+  },
+  {
+    "id": "SYN-10",
+    "message": "Your account verification code is 123456. Do not share it with anyone.",
+    "expected_indicators": [
+      "Credential or verification request"
     ]
   }
 ]
