@@ -171,3 +171,20 @@ PhishGuard AI is organised into three main parts:
 User input → Streamlit interface → Rule-based analysis → Security report → Safe next steps
 
 The test runner independently evaluates the analysis function using the synthetic dataset.
+
+## 🌐 Live deployment testing
+
+The deployed Streamlit application was manually tested using six fictional messages.
+
+| Test scenario | Expected result | Live result |
+|---|---|---|
+| Suspicious account message | 4 direct indicators | PASS |
+| Ordinary library reminder | No indicators | PASS |
+| Ambiguous parcel delivery | 2 contextual signals | PASS |
+| Parcel payment request | 1 direct indicator | PASS |
+| Account update request | 1 direct + 2 contextual signals | PASS |
+| Password and OTP request | 1 direct indicator | PASS |
+
+**Result: 6 out of 6 test cases matched their expected indicator results.**
+
+These tests demonstrate that the deployed application behaved as expected on the selected examples. They do not establish real-world phishing detection accuracy.
